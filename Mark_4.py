@@ -2,9 +2,11 @@ import streamlit as st
 from datetime import datetime
 import openai
 import requests
+import os
+
 
 # Set up API keys
-openai.api_key = 'sk-proj-X8c9fXSELTUbeFMVjO3eT3BlbkFJzAszNzY3DxDlzK39ZssM'
+openai.api_key = os.environ['api_key']
 weather_api_key = '6d71539c0a4b340713b2a341cf10f5e0'
 
 
